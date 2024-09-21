@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>COFFE HOUSE</header>
+    <main>
+        <div class="credentials">
+            <input type="text" class="user" name="surname" placeholder="Введите Фамилию">
+            <input type="text" class="user" name="name" placeholder="Введите Имя">
+        </div>
+            <div class="menu-title">
+                <h1>Напитки</h1>
+                <h1>Дессерты</h1>
+            </div>
+        <div class="menu">
+            <div class="menu-drinks">
+                <div class="choices">
+                    <input type="checkbox" class="checkbox" id="choice1" name="food" value="80">
+                    <label for="choice1">Эспрессо 80р.</label>
+                    <input type="number" class="count-choice" id="count-choice1" value="0">
+                </div>
+
+                <div class="choices">
+                    <input type="checkbox" class="checkbox" id="choice2" name="food" value="110">
+                    <label for="choice2">Латте 110р.</label>
+                    <input type="number" class="count-choice" id="count-choice2" value="0">
+                </div>
+
+                <div class="choices">
+                    <input type="checkbox" class="checkbox" id="choice3" name="food" value="120">
+                    <label for="choice3">Капучино 120р.</label>
+                    <input type="number" class="count-choice" id="count-choice3" value="0">
+                </div>
+
+                <div class="choices">
+                    <input type="checkbox" class="checkbox" id="choice4" name="food" value="90">
+                    <label for="choice4">Американо 90р.</label>
+                    <input type="number" class="count-choice" id="count-choice4" value="0">
+                </div>
+            </div>
+            <div class="menu-desserts">
+                <div class="choices">
+                    <input type="checkbox" class="checkbox" id="choice5" name="food" value="80">
+                    <label for="choice5">Шоколадный кекс 80р.</label>
+                    <input type="number" class="count-choice" id="count-choice5" value="0">
+                </div>
+
+                <div class="choices">
+                    <input type="checkbox" class="checkbox" id="choice6" name="food" value="90">
+                    <label for="choice6">Черничный кекс 90р.</label>
+                    <input type="number" class="count-choice" id="count-choice6" value="0">
+                </div>
+
+                <div class="choices">
+                    <input type="checkbox" class="checkbox" id="choice7" name="food" value="100">
+                    <label for="choice7">Яблочный тарт 80р.</label>
+                    <input type="number" class="count-choice" id="count-choice7" value="0">
+                </div>
+            </div>
+        </div>
+            <div class="result">
+                <p class="answer">Итого: <span class="result-count"></span></p>
+                <button class="btn">ОФОРМИТЬ ЗАКАЗ</button>
+            </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
